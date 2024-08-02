@@ -15,7 +15,7 @@ const PredictionForm = (e) => {
         const data = [parseFloat(recency), parseFloat(frequency), parseFloat(monetary), parseFloat(time)]
         setLoading(true)
         try {
-           const response = await axios.post('https://blood-backend-phqz.onrender.com/api/predict', {
+           const response = await axios.post('https://blood-backend-1kus.onrender.com/api/predict', {
             data});
             if(response.data.predictions[0].values[0][0]===0){
                 
